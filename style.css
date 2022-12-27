@@ -14,7 +14,7 @@ body{
   min-height: 100vh;
   background-image: url(./img/electric-scooter-4983759_1920.jpg);
 }
-body::after{
+/* body::after{
   content: "";
   position: absolute;
   width: 100%;
@@ -23,7 +23,7 @@ body::after{
   left: 0;
   background-color: #000;
   opacity: 0.1;
-}
+} */
 
 .container{
   width: 690px;
@@ -59,7 +59,7 @@ body::after{
   padding: 10px 15px;
 }
 
-.controls, li{
+.controls, li, .icons{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,6 +68,19 @@ body::after{
 .controls{
   list-style: none;
   padding: 12px 15px;
+}
+
+.controls .row.from .icons{
+  padding-right: 15px;
+  border-right: 1px solid #bbb;
+}
+.controls .row.to .icons{
+  padding-left: 15px;
+  border-left: 1px solid #bbb;
+}
+
+.controls .icons{
+  width: 38%;
 }
 
 .controls .icons i{
@@ -88,4 +101,17 @@ body::after{
   color: #9f9f9f;
   font-size: 16px;
   cursor: pointer;
+}
+
+.container button{
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 17px;
+  background: #7788cd;
 }
